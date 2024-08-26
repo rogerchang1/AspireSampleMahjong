@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireSample.AppHost", "AspireSample.AppHost\AspireSample.AppHost.csproj", "{7B7041AA-0590-493A-AEBB-25E5F7DCE60C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireSample.AppHost", "AspireSample.AppHost\AspireSample.AppHost.csproj", "{7B7041AA-0590-493A-AEBB-25E5F7DCE60C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireSample.ServiceDefaults", "AspireSample.ServiceDefaults\AspireSample.ServiceDefaults.csproj", "{DDDECD04-D934-474A-BA85-9553C317BCF5}"
 EndProject
@@ -11,6 +11,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireSample.Web", "AspireSample.Web\AspireSample.Web.csproj", "{C9672641-BD9D-4AF1-AE2F-D7BA20A582B3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireSample.Tests", "AspireSample.Tests\AspireSample.Tests.csproj", "{2EDD92E0-5880-4978-B39E-8253C52A31B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireSample.Mahjong", "AspireSample.Mahjong\AspireSample.Mahjong.csproj", "{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{2EDD92E0-5880-4978-B39E-8253C52A31B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EDD92E0-5880-4978-B39E-8253C52A31B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EDD92E0-5880-4978-B39E-8253C52A31B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,7 +7,8 @@ var postgres = builder.AddPostgres("postgres")
 
 var postgresdb = postgres.AddDatabase("postgresdb");
 
-var apiService = builder.AddProject<Projects.AspireSample_ApiService>("apiservice");
+var apiService = builder.AddProject<Projects.AspireSample_ApiService>("apiservice")
+    .WithExternalHttpEndpoints();
 
 /*var weatherApi = builder.AddProject<Projects.AspireJavaScript_MinimalApi>("weatherapi")
     .WithExternalHttpEndpoints();*/
@@ -18,10 +19,12 @@ builder.AddProject<Projects.AspireSample_Web>("webfrontend")
     .WithReference(apiService);
 
 builder.AddNpmApp("reactmahjong", "../reactmahjong")
+    .WithReference(apiService)
     .WithEnvironment("BROWSER", "none") // Disable opening browser on npm start
     .WithHttpEndpoint(env: "PORT")
     .WithExternalHttpEndpoints()
     .PublishAsDockerFile();
+    
 //.WithReference(weatherApi)
 
 builder.Build().Run();
