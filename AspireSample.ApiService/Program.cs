@@ -1,3 +1,6 @@
+using AspireSample.Mahjong;
+using SharedModels;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults & Aspire components.
@@ -54,7 +57,9 @@ app.MapGet("/weatherforecast", () =>
 app.MapPost("/handscore", (HandModel hand) =>
 {
     Console.WriteLine(hand);
-    return "test";
+    CHandScorer oHandScorer = new CHandScorer();
+    ScoreModel? oScoreModel = oHandScorer.ScoreHand(hand);
+    return oScoreModel;
 })
 .WithName("PostRogerTest")
 .WithOpenApi();
@@ -66,29 +71,3 @@ record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
     public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 }
 
-public record HandModel(string Hand, bool IsRiichi, Block[] Blocks, bool IsDoubleRiichi, bool IsIppatsu, bool IsHoutei, bool IsHaitei, bool IsRinshan, bool IsChankan, Wind SeatWind, Wind RoundWind, Agari Agari, int DoraCount, string WinTile ) { }
-
-public record Block(string Tile, BlockType Type) { }
-
-public enum BlockType
-{
-    UNKNOWN,
-    PON,
-    CHI,
-    OPENKAN,
-    CLOSEDKAN,
-}
-
-public enum Wind
-{
-    EAST,
-    SOUTH,
-    WEST,
-    NORTH,
-}
-
-public enum Agari
-{
-    TSUMO,
-    RON,
-}

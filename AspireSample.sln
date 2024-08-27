@@ -7,12 +7,18 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireSample.ServiceDefaults", "AspireSample.ServiceDefaults\AspireSample.ServiceDefaults.csproj", "{DDDECD04-D934-474A-BA85-9553C317BCF5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireSample.ApiService", "AspireSample.ApiService\AspireSample.ApiService.csproj", "{5ACA3B51-00F0-4F0B-8476-925894446433}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0276436B-D54C-45AE-B38C-19829EE9F163} = {0276436B-D54C-45AE-B38C-19829EE9F163}
+		{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B} = {10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireSample.Web", "AspireSample.Web\AspireSample.Web.csproj", "{C9672641-BD9D-4AF1-AE2F-D7BA20A582B3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireSample.Tests", "AspireSample.Tests\AspireSample.Tests.csproj", "{2EDD92E0-5880-4978-B39E-8253C52A31B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireSample.Mahjong", "AspireSample.Mahjong\AspireSample.Mahjong.csproj", "{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspireSample.Mahjong", "AspireSample.Mahjong\AspireSample.Mahjong.csproj", "{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedModels", "SharedModels\SharedModels.csproj", "{0276436B-D54C-45AE-B38C-19829EE9F163}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +50,10 @@ Global
 		{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10F6B16D-C90E-400A-9F4C-4B23B0AE1B8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0276436B-D54C-45AE-B38C-19829EE9F163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0276436B-D54C-45AE-B38C-19829EE9F163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0276436B-D54C-45AE-B38C-19829EE9F163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0276436B-D54C-45AE-B38C-19829EE9F163}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

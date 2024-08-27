@@ -7,4 +7,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SharedModels\SharedModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Mahjong">
+      <HintPath>bin\Mahjong.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
