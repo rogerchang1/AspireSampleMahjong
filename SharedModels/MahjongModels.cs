@@ -5,7 +5,7 @@
 
     public record BlockModel(string Tile, BlockType Type) { }
 
-    public record ScoreModel(int Han, int Fu, int SinglePayment, Dictionary<string, int> AllPayment, List<string> YakuList) { }
+    public record ScoreModel(int Han, int Fu, int SinglePayment, Dictionary<string, int> AllPayment, List<string> YakuList, List<string> HanBreakdown, List<string> FuBreakdown) { }
 
     public enum BlockType
     {

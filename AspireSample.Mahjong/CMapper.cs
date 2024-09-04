@@ -38,6 +38,9 @@ namespace AspireSample.Mahjong
                     oBlock.Tiles.Add(t);
                     oBlock.Tiles.Add(new Tile(t.CompareValue + 1));
                     oBlock.Tiles.Add(new Tile(t.CompareValue + 2));
+                    oHand.Tiles.Add(t);
+                    oHand.Tiles.Add(new Tile(t.CompareValue + 1));
+                    oHand.Tiles.Add(new Tile(t.CompareValue + 2));
                     oBlock.Type = Mentsu.Shuntsu;
                     oBlock.IsOpen = true;
                     oBlock.KanType = KanType.None;
@@ -47,6 +50,9 @@ namespace AspireSample.Mahjong
                     oBlock.Tiles.Add(new Tile(oBlockModel.Tile));
                     oBlock.Tiles.Add(new Tile(oBlockModel.Tile));
                     oBlock.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
                     oBlock.Type = Mentsu.Koutsu;
                     oBlock.IsOpen = true;
                     oBlock.KanType = KanType.None;
@@ -57,6 +63,10 @@ namespace AspireSample.Mahjong
                     oBlock.Tiles.Add(new Tile(oBlockModel.Tile));
                     oBlock.Tiles.Add(new Tile(oBlockModel.Tile));
                     oBlock.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
                     oBlock.Type = Mentsu.Kantsu;
                     oBlock.IsOpen = true;
                     oBlock.KanType = KanType.Daiminkan; //Note: This doesn't matter for scoring purposes.
@@ -67,6 +77,10 @@ namespace AspireSample.Mahjong
                     oBlock.Tiles.Add(new Tile(oBlockModel.Tile));
                     oBlock.Tiles.Add(new Tile(oBlockModel.Tile));
                     oBlock.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
+                    oHand.Tiles.Add(new Tile(oBlockModel.Tile));
                     oBlock.Type = Mentsu.Kantsu;
                     oBlock.IsOpen = false;
                     oBlock.KanType = KanType.Ankan;
@@ -87,7 +101,9 @@ namespace AspireSample.Mahjong
             int nSinglePayment = poScore.SinglePayment;
             Dictionary<string, int> oAllPayment = poScore.AllPayment;
             List<string> oYakuList = MapYakuList(poScore.YakuList);
-            return new ScoreModel(nHan, nFu, nSinglePayment, oAllPayment, oYakuList);
+            List<string> oHanBreakdown = poScore.HanBreakdown;
+            List<string> oFuBreakdown = poScore.FuBreakdown;
+            return new ScoreModel(nHan, nFu, nSinglePayment, oAllPayment, oYakuList, oHanBreakdown, oFuBreakdown);
             
         }
 
