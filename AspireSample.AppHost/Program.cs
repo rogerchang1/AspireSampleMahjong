@@ -2,10 +2,11 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 var cache = builder.AddRedis("cache");
 
-var postgres = builder.AddPostgres("postgres")
+/*var postgres = builder.AddPostgres("postgres")
                       .PublishAsAzurePostgresFlexibleServer();
+*/
 
-var postgresdb = postgres.AddDatabase("postgresdb");
+//var postgresdb = postgres.AddDatabase("postgresdb");
 
 var apiService = builder.AddProject<Projects.AspireSample_ApiService>("apiservice")
     .WithExternalHttpEndpoints();

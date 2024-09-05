@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.AddServiceDefaults();
 
 //postgredsdb
-builder.AddNpgsqlDataSource("postgresdb");
+//builder.AddNpgsqlDataSource("postgresdb");
 
 // Add services to the container.
 builder.Services.AddProblemDetails();
