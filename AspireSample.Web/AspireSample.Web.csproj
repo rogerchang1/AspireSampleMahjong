@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <PackageReference Include="Aspire.StackExchange.Redis.OutputCaching" Version="8.0.0" />
+    <PackageReference Include="Mahjong" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

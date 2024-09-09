@@ -14,6 +14,7 @@
 
   <ItemGroup>
     <PackageReference Include="Aspire.Npgsql" Version="8.1.0" />
+    <PackageReference Include="Mahjong" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.1" />
   </ItemGroup>

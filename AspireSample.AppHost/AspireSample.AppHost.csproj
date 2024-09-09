@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -21,6 +21,7 @@
     <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.1.0" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.0" />
     <PackageReference Include="Aspire.Npgsql" Version="8.1.0" />
+    <PackageReference Include="Mahjong" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

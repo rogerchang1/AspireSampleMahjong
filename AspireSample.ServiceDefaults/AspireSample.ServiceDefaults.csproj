@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Mahjong" Version="1.0.0" />
 
     <PackageReference Include="Microsoft.Extensions.Http.Resilience" Version="8.3.0" />
     <PackageReference Include="Microsoft.Extensions.ServiceDiscovery" Version="8.0.0" />
