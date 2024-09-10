@@ -6,9 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add service defaults & Aspire components.
 builder.AddServiceDefaults();
 
-//postgredsdb
-//builder.AddNpgsqlDataSource("postgresdb");
-
 // Add services to the container.
 builder.Services.AddProblemDetails();
 builder.Services.AddEndpointsApiExplorer();
@@ -56,12 +53,11 @@ app.MapGet("/weatherforecast", () =>
 
 app.MapPost("/handscore", (HandModel hand) =>
 {
-    Console.WriteLine(hand);
     CHandScorer oHandScorer = new CHandScorer();
     ScoreModel? oScoreModel = oHandScorer.ScoreHand(hand);
     return oScoreModel;
 })
-.WithName("PostRogerTest")
+.WithName("PostHandScore")
 .WithOpenApi();
 
 app.Run();

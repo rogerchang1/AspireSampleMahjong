@@ -12,15 +12,12 @@
   <ItemGroup>
     <ProjectReference Include="..\AspireSample.ApiService\AspireSample.ApiService.csproj" />
     <ProjectReference Include="..\AspireSample.Mahjong\AspireSample.Mahjong.csproj" />
-    <ProjectReference Include="..\AspireSample.Web\AspireSample.Web.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0" />
     <PackageReference Include="Aspire.Hosting.NodeJs" Version="8.1.0" />
-    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.1.0" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.0" />
-    <PackageReference Include="Aspire.Npgsql" Version="8.1.0" />
     <PackageReference Include="Mahjong" Version="1.0.0" />
   </ItemGroup>
 
