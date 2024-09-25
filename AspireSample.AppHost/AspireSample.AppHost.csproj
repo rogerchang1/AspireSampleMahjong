@@ -7,6 +7,7 @@
     <Nullable>enable</Nullable>
     <IsAspireHost>true</IsAspireHost>
     <UserSecretsId>b503e30c-541c-4a44-934a-0b0696a0e7a7</UserSecretsId>
+    <IsPublishable>true</IsPublishable>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.2.0" />
     <PackageReference Include="Aspire.Hosting.NodeJs" Version="8.1.0" />
     <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.0" />
     <PackageReference Include="Mahjong" Version="1.0.0" />
